@@ -22,4 +22,15 @@
     <style name="Theme.PlantAppUi.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.PlantAppUi.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SearchView" parent="">
+        <item name="android:editTextColor">@color/black_soft</item>
+        <item name="android:textColorHint">@color/dark_late_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:tint">@color/black</item>
+    </style>
+
+
+
+
 </resources>

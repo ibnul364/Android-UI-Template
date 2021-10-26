@@ -34,7 +34,7 @@ public class GroupAdapter extends  RecyclerView.Adapter<GroupAdapter.ViewHolder>
 
     @NonNull
     @Override
-    public GroupAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.group_item,parent,false);
         return new ViewHolder(view);
     }
@@ -83,7 +83,7 @@ public class GroupAdapter extends  RecyclerView.Adapter<GroupAdapter.ViewHolder>
 
     private void setRecommendList(RecyclerView recyclerView) {
 
-        RecommendPlantAdapter adapter = new RecommendPlantAdapter (context, featuredList);
+        RecommendPlantAdapter adapter = new RecommendPlantAdapter (context, recommendList);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(context,RecyclerView.HORIZONTAL,false));
         recyclerView.setAdapter(adapter);

@@ -65,8 +65,8 @@ public class HomeFragment extends Fragment {
         featuredList = new ArrayList<>();
 
         recommendList.add(new Plant("Lily","China","$300",R.drawable.image_1));
-        recommendList.add(new Plant("Lily","China","$300",R.drawable.image_2));
-        recommendList.add(new Plant("Lily","China","$300",R.drawable.image_3));
+        recommendList.add(new Plant("Bily","China","$300",R.drawable.image_2));
+        recommendList.add(new Plant("Chily","China","$300",R.drawable.image_3));
 
         featuredList.add(new Plant("Lily","China","$300",R.drawable.bottom_img_1));
     }

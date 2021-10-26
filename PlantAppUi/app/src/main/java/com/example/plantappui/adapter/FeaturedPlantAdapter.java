@@ -26,7 +26,7 @@ public class FeaturedPlantAdapter extends RecyclerView.Adapter<FeaturedPlantAdap
 
     @NonNull
     @Override
-    public FeaturedPlantAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.featured_plant_item,parent,false);
         return new ViewHolder(view);
     }

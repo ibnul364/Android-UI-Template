@@ -27,7 +27,7 @@ public class RecommendPlantAdapter extends RecyclerView.Adapter<RecommendPlantAd
 
     @NonNull
     @Override
-    public RecommendPlantAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.recommend_item_plant,parent,false);
         return new RecommendPlantAdapter.ViewHolder(view);
     }

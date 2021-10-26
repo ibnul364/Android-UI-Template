@@ -21,7 +21,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/featured_item_plant_picture"
         android:background="@color/white">
 
@@ -37,7 +37,8 @@
             android:text="Title"
             android:textColor="@color/black"
             android:textStyle="bold"
-            tools:ignore="RtlCompat" />
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/featured_item_plant_price" />
 
         <TextView
             android:id="@+id/featured_item_plant_price"

@@ -4,7 +4,14 @@ public class Plant {
     private  String plantName;
     private  String plantCountry;
     private  String plantPrice;
-    private  String plantImage;
+    private  int plantImage;
+
+    public Plant(String plantName, String plantCountry, String plantPrice, int plantImage) {
+        this.plantName = plantName;
+        this.plantCountry = plantCountry;
+        this.plantPrice = plantPrice;
+        this.plantImage = plantImage;
+    }
 
     public String getPlantName() {
         return plantName;
@@ -30,18 +37,11 @@ public class Plant {
         this.plantPrice = plantPrice;
     }
 
-    public String getPlantImage() {
+    public int getPlantImage() {
         return plantImage;
     }
 
-    public void setPlantImage(String plantImage) {
-        this.plantImage = plantImage;
-    }
-
-    public Plant(String plantName, String plantCountry, String plantPrice, String plantImage) {
-        this.plantName = plantName;
-        this.plantCountry = plantCountry;
-        this.plantPrice = plantPrice;
+    public void setPlantImage(int plantImage) {
         this.plantImage = plantImage;
     }
 }

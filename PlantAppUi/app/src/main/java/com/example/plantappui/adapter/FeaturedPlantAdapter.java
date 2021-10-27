@@ -1,6 +1,7 @@
 package com.example.plantappui.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.plantappui.ItemDetailActivity;
 import com.example.plantappui.R;
 import com.example.plantappui.model.Plant;
 
@@ -61,6 +63,14 @@ public class FeaturedPlantAdapter extends RecyclerView.Adapter<FeaturedPlantAdap
             plantName = itemView.findViewById(R.id.featured_item_plant_title);
             plantPrice = itemView.findViewById(R.id.featured_item_plant_price);
             plantCountry = itemView.findViewById(R.id.featured_item_plant_country);
+
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    context.startActivity(new Intent(context, ItemDetailActivity.class));
+                }
+            });
 
 
         }
